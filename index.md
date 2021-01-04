@@ -1,3 +1,3 @@
 # halr.github.io
 ## Navigation
-* About
+* [About](about.md)
