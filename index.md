@@ -1,4 +1,4 @@
 # halr.github.io
 Projects and blog.
 ## Navigation
-* [About](about.md)
+* [About Me](about.md)
