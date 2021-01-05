@@ -1,4 +1,4 @@
 # halr.github.io
-Projects and blog.
+A static website to document various projects, explorations, and experiments.
 ## Navigation
 * [About Me](about.md)
