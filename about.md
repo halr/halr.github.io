@@ -6,4 +6,4 @@ My name is Hal Rodriguez. A bit about [Amped Atelier](https://www.ampedatelier.c
 * Twitter
 
 ### Colophon
-This [site](https://halr.github.io) was built using [GitHub Pages](https://pages.github.com/).
+This site was built using [GitHub Pages](https://pages.github.com/).
