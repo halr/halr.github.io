@@ -1,9 +1,9 @@
-# About Me
-My name is Hal Rodriguez. A bit about [Amped Atelier](https://www.ampedatelier.com), the [book](https://www.makeitwearitbook.com), NYU and ITP.
+## About Me
+My name is Hal Rodriguez. I am one half of [Amped Atelier](https://www.ampedatelier.com). I coauthored a [book](https://www.makeitwearitbook.com). I am back at NYU's ITP to finish my masters.
 
 ### Social Media
-* Instagram
-* Twitter
+* [Instagram](https://www.instagram.com/thaumatomane/)
+* [Twitter](https://twitter.com/halr66)
 
 ### Colophon
 This site was built using [GitHub Pages](https://pages.github.com/).
