@@ -1,5 +1,4 @@
-# Hal's Musings
-* [About Me](about.md)
+## Index
+A static website to document various experiments, explorations, and projects.
 
-## Highlights
-A static website to document various projects, explorations, and experiments.
+* [About Me](about.md)
