@@ -6,4 +6,4 @@ I am Hal Rodriguez. I am one half of the Tech Couture design studio [Amped Ateli
 * [Twitter](https://twitter.com/halr66)
 
 ### Colophon
-This site was built using [GitHub Pages](https://pages.github.com/) with the [minimal](https://github.com/pages-themes/minimal) theme.
+This site was built using [GitHub Pages](https://pages.github.com/) with the [minima](https://github.com/jekyll/minima) theme.
