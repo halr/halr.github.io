@@ -1,4 +1,11 @@
 title: Hal's Musings
+author: Hal Rodriguez
+email: hr2003@nyu.edu
 description: experiments, explorations, & projects
-# logo:
-theme: jekyll-theme-minimal
+theme: minima
+
+# social links
+twitter_username: halr66 # DO NOT include the @ character, or else the build will fail!
+github_username:  halr # DO NOT include the @ character, or else the build will fail!
+
+show_excerpts: true # set to false to remove excerpts on the homepage
