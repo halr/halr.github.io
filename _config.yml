@@ -7,5 +7,11 @@ theme: minima
 # social links
 twitter_username: halr66 # DO NOT include the @ character, or else the build will fail!
 github_username:  halr # DO NOT include the @ character, or else the build will fail!
+instagram_username: thaumatomane
 
 show_excerpts: true # set to false to remove excerpts on the homepage
+
+header_pages:
+  - about.md
+  - intangible.md
+  - mixd.md
