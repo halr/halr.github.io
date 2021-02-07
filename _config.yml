@@ -5,9 +5,11 @@ description: experiments, explorations, & projects
 theme: minima
 
 # social links
-twitter_username: halr66 # DO NOT include the @ character, or else the build will fail!
 github_username:  halr # DO NOT include the @ character, or else the build will fail!
-instagram_username: thaumatomane
+#linkedin_username: jekyll
+#instagram_username: thaumatomane
+#youtube_username: jekyll
+#twitter_username: halr66 # DO NOT include the @ character, or else the build will fail!
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
