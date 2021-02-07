@@ -8,9 +8,13 @@ This page should not be linked from anywhere.
 ## Liquid Filters & Posts
 Let's test out some [Liquid Filters](https://jekyllrb.com/docs/liquid/filters/) to [Display an index of posts](https://jekyllrb.com/docs/posts/)
 
+'''
+{{ site.posts | where_exp:"item", "item.tags contains 'mixd'" }}
+'''
+
 ### MIxD
 <ul>
-  {% for post in { site.posts | where:"tag","mixd" } %}
+  {% for post in { site.posts | where_exp:"item", "item.tags contains 'mixd'" } %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
