@@ -1,7 +1,7 @@
 title: Hal's Musings
 author: Hal Rodriguez
 email: hr2003@nyu.edu
-description: experiments, explorations, & projects
+description: Hal's NYU ITP blog documenting assigments, experiments, explorations, & projects.
 theme: minima
 
 # social links
@@ -17,3 +17,7 @@ header_pages:
   - about.md
   - intangible.md
   - mixd.md
+
+# Enabling comments (via Disqus)
+disqus:
+  shortname: hals-musings # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
