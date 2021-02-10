@@ -11,7 +11,7 @@ The design failed, people didn't what to do or where to look for the effect. We 
 
 ![the set up](/images/IMG_7156.jpeg)
 
-In hindsight, it's easy to see how the set up failed. The etched hand print indicated to every child to slam thier hand on it. Looking down attendee failed to see the lights reacting, the interaction faded to the background. The sensitivty of the capacitive proximity sensor was limited to near distances of about a foot away from the electrode.
+In hindsight, it's easy to see how the set up failed. The etched hand print indicated to every child to slam thier hand on it. Looking down, attendees failed to see the lights on the dress form reacting, the interaction faded to the background. The sensitivty of the capacitive proximity sensor was limited to near distances of about a foot away from the electrode.
 
 ![bad design](/images/IMG_7158.jpeg)
 
