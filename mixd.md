@@ -8,7 +8,7 @@ Musical Interaction Design, Spring 2021
 {% for tag in post.tags %}
 {% if tag == page.tag %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ site.time | date_to_string: "ordinal", "US" }} — <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
 {% endif %}
 {% endfor %}
