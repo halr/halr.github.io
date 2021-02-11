@@ -8,7 +8,7 @@ Intangible Interaction, Spring 2021
 {% for tag in post.tags %}
 {% if tag == page.tag %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.date | date_to_string: "ordinal", "US" }} — <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
 {% endif %}
 {% endfor %}
