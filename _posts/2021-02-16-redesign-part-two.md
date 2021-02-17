@@ -23,6 +23,7 @@ Using the [Adafruit Edge Badge](https://www.adafruit.com/product/4400) with a bu
 </video>
 
 ## The Design Prototype
+![](/images/protoSketch.png)
 The redesign was fairly straightforward, but a few things needed to be adjusted. The original Color Mixing project had 3 capacitative proximity sensors. For our demo we will have one color variable and the other two with fixed. The value of red is fixed, mixing in blue gives colors from red to purple. The color change is hard to see, partly because the LEDs are not calibrated for perception. It is even harder to see over video call because camera kept changing the color balance as the color changed! The idea is that the ring surrounding the sensor displayed the intensity of the color being mixed in and the vertical strip provides feedback that moving your hand moving up and down mixes colors.
 
 <video width="640" height="360" controls>
