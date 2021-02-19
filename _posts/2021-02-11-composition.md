@@ -7,7 +7,7 @@ My first foray into Ableton Live and Max for Live! My primary design concerns we
 
 ![](/images/compSketch1.png)
 
-I am very new to Ableton Live and Max for Live. My original intention was to use an a proximity sensor as a MIDI controller. Little Bits has a [proximity sensor](https://classroom.littlebits.com/bit-o-pedia/proximity-sensor) and a [MIDI module](https://classroom.littlebits.com/bit-o-pedia/midi) that acts a voltage to MIDI converter. It work fine has a direct controller, as did keyboard bit. Unfortunately, having never used Max for Live before, I quickly got nowhere using the set up with Max for Live.
+I am very new to Ableton Live and Max for Live. My original intention was to use an a proximity sensor as a MIDI controller. Little Bits has a [proximity sensor](https://classroom.littlebits.com/bit-o-pedia/proximity-sensor) and a [MIDI module](https://classroom.littlebits.com/bit-o-pedia/midi) that acts a voltage to MIDI converter. It worked fine has a direct controller, as did keyboard bit. Unfortunately, having never used Max for Live before, I quickly got nowhere using the set up with Max for Live.
 
 ![](/images/littlebits.png)
 
