@@ -4,6 +4,7 @@ date: 2021-03-02
 tags: intangible
 ---
 Instead of narrowing down from [previous cube ideas]({% post_url 2021-02-23-curious-cube-ideas %}), I came up with a alternative concept. The Curious Rhythm Cube plays rhythm patterns which the user can control using simple gestures using the APDS9960 gesture sensor.
+
 ![idea sketch](/images/rhythmBox.png)
 
 ## Intangible Interaction
@@ -23,16 +24,18 @@ I have identified three possible system designs that might work. In all three ca
 
 ## BOM
 Bill of Materials
+
 | Item | Price | Purpose and/or notes |
-|:-----|------:|:-----|
+|-----|------|-----|
 | white semitranslucent acrylic | NA | cube structure |
 | [Arduino Nano BLE Sense](https://store.arduino.cc/usa/nano-33-ble-sense) | $31.10 | Potentially another microcontroller? |
 | NeoPixel Ring | NA | in stock |
 | [Ableton Live](https://www.ableton.com) with [Max for Live](https://www.ableton.com/en/live/max-for-live/) | [90 day trail](https://www.ableton.com/en/trial/) | audio output |
 
 ## Project Timeline
+
 | Due Date | Action |
-|:---------|:-------|
+|---------|-------|
 | March 3rd | Idea Show & Tell |
 | ~ March 5th | prototyping and system decision |
 | ~ March 7th | cube construction |
