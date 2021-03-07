@@ -1,5 +1,5 @@
 ---
-title: "Composition Sketch"
+title: "Week 2: Composition Sketch"
 date: 2021-02-11
 tags: mixd
 ---
