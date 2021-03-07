@@ -22,8 +22,7 @@ I have identified three possible system designs that might work. In all three ca
 * [Arduino MKR1000 WiFi](https://store.arduino.cc/usa/arduino-mkr1000), with the [Sparkfun APDS-9960 breakout](https://www.sparkfun.com/products/12787), sending [OSC](https://github.com/CNMAT/OSC) over WiFi to Ableton Live with [Connection Kit](https://www.ableton.com/en/packs/connection-kit/)
 * [Sparkfun MIDI Shield](https://learn.sparkfun.com/tutorials/midi-shield-hookup-guide), also with the [Sparkfun APDS-9960 breakout](https://www.sparkfun.com/products/12787), sending MIDI directly to a Sound Module using standard MIDI cables
 
-## BOM
-Bill of Materials
+## Bill of Materials
 
 | Item | Price | Purpose and/or notes |
 |-----|------|-----|
