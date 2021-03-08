@@ -4,10 +4,10 @@ date: 2021-03-04
 tags: mixd
 published: false
 ---
-Intro
+- [ ] Intro
 
 ## Rhythm Interaction Designs
-Design several interactions that focus on exploring rhythm / time grids.
+- [ ] Design several interactions that focus on exploring rhythm / time grids.
 
 ## Prototyping Gesture Rhythm Patterns
 I chose to prototype controlling rhythm patterns with gestures. Using waving left and right gestures rhythm patterns are increasing complexity are played. I created eight rhythm patterns in Ableton Live, ranging from a metronome pattern to a basic blue/rock grove to a more funky complex pattern. The patterns increase in complexity building on the patterns. Here are three representative patterns.
@@ -54,4 +54,4 @@ On the recieveing end, I created a test patch that [route](https://docs.cycling7
 ![](/images/oscGestures.png)
 
 ### Adding Live Paths
-The next step is adding live paths
+- [ ] The next step is adding live paths
