@@ -7,6 +7,7 @@ This page should not be linked from anywhere.
 
 ## Link Tests
 Here are some [link](https://jekyllrb.com/docs/liquid/tags/#link) examples:
+* [Link to a document]({% link /intangible.md %})
 * [Link to a post]({% post_url 2021-02-06-music-fits-room %})
 * [Link to a page]({% link /intangible.html %})
 
