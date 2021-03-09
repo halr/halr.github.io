@@ -3,7 +3,7 @@ title: "Rhythm Cube Prototyping"
 date: 2021-03-09
 tags: intangible mixd
 ---
-This week we prototype the transport and communication aspects of the [Curious Rhythm Cube]({% post_url 2021-03-02-chosen-cube %}). Should the cube handle the sequencing of the rhythms itself sending MIDI data through USB or BLE? Should the cube send only to gesture events to a sequencer, such as Abelton Live, over OSC?
+This week we prototype the transport and communication aspects of the [Curious Rhythm Cube]({% post_url 2021-03-02-choosen-cube %}). Should the cube handle the sequencing of the rhythms itself sending MIDI data through USB or BLE? Should the cube send only to gesture events to a sequencer, such as Abelton Live, over OSC?
 
 ## Arduino and MIDI USB Library
 My first choice was to try using the [Arduino Nano 33 BLE Sense](https://store.arduino.cc/usa/nano-33-ble-sense) since it includes the ADPS9600 gesture sensor on board. I reviewed the [MIDI Output using an Arduino](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-midi-output-using-an-arduino/) lab from ITP's Physical Computing class. Unfortunately, the [MIDIUSB library](https://www.arduino.cc/en/Reference/MIDIUSB) does not compile error against [mbed](https://os.mbed.com) based Nano BLE 33 Sense board.
