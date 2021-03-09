@@ -1,7 +1,7 @@
 ---
 title: "Tests & Debugging"
 tag: mixd
-published: false
+published: true
 ---
 This page should not be linked from anywhere.
 
