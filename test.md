@@ -1,12 +1,14 @@
 ---
 title: "Tests & Debugging"
-tag: intangible
-published: false
+tag: mixd
+published: true
 ---
 This page should not be linked from anywhere.
 
 ## Link Tests
-* W1. Experience concept based on intro song — [Music Fits Room]({% post_url 2021-02-06-music-fits-room %})
+Here are some [link](https://jekyllrb.com/docs/liquid/tags/#link) examples:
+* [Link to a post]({% post_url 2021-02-06-music-fits-room %})
+* [Link to a page]({% link /intangible.html %})
 
 ## Class Posts with Excerpts Test
 Written in [Liquid](https://shopify.github.io/liquid/) and [Liquid Filters](https://jekyllrb.com/docs/liquid/filters/) to [display an index of posts](https://jekyllrb.com/docs/posts/).
