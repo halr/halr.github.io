@@ -1,7 +1,7 @@
 ---
 title: "Rhythm Cube Prototyping"
 date: 2021-03-09
-tags: intangible, mixd
+tags: intangible mixd
 ---
 This week we prototype the transport and communication aspects of the [Curious Rhythm Cube]({% post_url 2021-03-02-chosen-cube %}). Should the cube handle the sequencing of the rhythms itself sending MIDI data through USB or BLE? Should the cube send only to gesture events to a sequencer, such as Abelton Live, over OSC?
 
