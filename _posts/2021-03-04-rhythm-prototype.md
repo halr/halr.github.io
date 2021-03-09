@@ -2,15 +2,17 @@
 title: "Week 3+4+5: Rhythm Exploration & Prototype"
 date: 2021-03-04
 tags: mixd
-published: false
 ---
-- [ ] Intro
+*This post is currently a **Work In Progress**.* This is a big catch up post, where I cover serval things, including explore adding external control to Ableton Live, brainstorming rhythm interaction designs and prototyping a design. In previous weeks, I felt I was attempting too much without a basic understanding of Ableton Live. I am much more confident in my ability to prototype using Ableton now.
 
 ## Rhythm Interaction Designs
-- [ ] Design several interactions that focus on exploring rhythm / time grids.
+The assignment for weeks 4 and 5 was to design several interactions that focus on exploring rhythm / time grids.
+* The **Curious Rhythm Cube** is melding of designing a rhythm interaction and an intangible interaction with the form of a cube. The [Curious Rhythm Cube]({% post_url 2021-03-02-chosen-cube %})'s interaction allow for the exploration of rhythm in terms of tempo and complexity. Rather than a time grid, a 16 LED ring at the top of the cube reflects the circular nature of the repeating pattern. An LED lights up if there is a note being played at the corresponding sub division. A gesture sensor can recognize the wave of a hand along two axes: Left & Right, Up & Down. A wave on the Up & Down axis controls the tempo of the pattern, and a wave in the Left & Right axis controls the rhythm pattern being played.
+![](/images/rhythmCube.png) 
+* **Firefly Syncing Rhythm** is inspired Steve Riechs's [*phasing*](https://en.wikipedia.org/wiki/Phase_music) technique and fireflies' synchronization of thier flashing. Years ago, I came across a simple [algorthmic explaination of how fireflies synch up](https://ncase.me/fireflies/), by nudging thier internal flashing clocks forward when they see a nearby firefly flash. I can image folks wearing cute firefly badges that make simple beeps that gradually synch up over time. The *flashing* can be made by infrared transmitter and recievers. There is even a MakeCode BBC Micro Bit [firefly example](https://makecode.microbit.org/projects/fireflies), which uses the Bluetooth radio.
 
 ## Prototyping Gesture Rhythm Patterns
-I chose to prototype controlling rhythm patterns with gestures. Using waving left and right gestures rhythm patterns are increasing complexity are played. I created eight rhythm patterns in Ableton Live, ranging from a metronome pattern to a basic blue/rock grove to a more funky complex pattern. The patterns increase in complexity building on the patterns. Here are three representative patterns.
+I am choosing to prototype controlling rhythm patterns with gestures of the Curious Rhythm Cube. Using waving left and right gestures rhythm patterns are increasing complexity are played. I created eight rhythm patterns in Ableton Live, ranging from a metronome pattern to a basic blue/rock grove to a more funky complex pattern. The patterns increase in complexity building on the patterns. Here are three representative patterns.
 ![](/images/rhythmTikTik.png)
 ![](/images/rhythmBlues.png)
 ![](/images/rhythmZigZag.png)
