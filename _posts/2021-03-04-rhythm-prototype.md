@@ -3,7 +3,7 @@ title: "Week 3+4+5: Rhythm Exploration & Prototype"
 date: 2021-03-04
 tags: mixd
 ---
-*This post is currently a **Work In Progress**.* This is a big catch up post, where I cover serval things, including explore adding external control to Ableton Live, brainstorming rhythm interaction designs and prototyping a design. In previous weeks, I felt I was attempting too much without a basic understanding of Ableton Live. I am much more confident in my ability to prototype using Ableton now.
+This is a big catch up post, where I cover serval things, including explore adding external control to Ableton Live, brainstorming rhythm interaction designs and prototyping a design. In previous weeks, I felt I was attempting too much without a basic understanding of Ableton Live. I am much more confident in my ability to prototype using Ableton now.
 
 ## Rhythm Interaction Designs
 The assignment for weeks 4 and 5 was to design several interactions that focus on exploring rhythm / time grids.
@@ -52,8 +52,11 @@ void loop() {
   delay(3000);
 }
 ```
-On the receiving end, I created a test patch that [route](https://docs.cycling74.com/max8/refpages/route)s gestures received as [udpreceive](https://docs.cycling74.com/max8/refpages/udpreceive) messages. The [buttons](https://docs.cycling74.com/max8/refpages/button) blink indicating that a message has been and routed, or not for debugging. The intention is have left and right gestures cycle through the set of rhythm clips and the up and down gestures increase and decrease the tempo.
+On the receiving end, I created a test patch that [routes](https://docs.cycling74.com/max8/refpages/route) gestures received as [`udpreceive`](https://docs.cycling74.com/max8/refpages/udpreceive) messages. The [`button`](https://docs.cycling74.com/max8/refpages/button)s blink indicating that a message has been and routed, or not for debugging. The intention is have left and right gestures cycle through the set of rhythm clips and the up and down gestures increase and decrease the tempo.
+
 ![](/images/oscGestures.png)
 
 ### Adding Live Paths
-- [ ] The next step is adding live paths
+OSC messages being received and routed, it was time to cycle through clips using [`live.path`](https://docs.cycling74.com/max8/refpages/live.path) and [`live.object`](https://docs.cycling74.com/max8/refpages/live.object). I struggeled to get a clip triggered.
+
+![](/images/oscLivePath.png)
