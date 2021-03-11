@@ -12,7 +12,7 @@ WARNING: library MIDIUSB claims to run on avr, sam, samd architecture(s) and may
 #error MIDIUSB can only be used with an USB MCU.
 #error "Unsupported architecture"
 ```
-Fortunately, MIDIUSB does compile and work on the SAMD based [Arduino MKR1000](https://store.arduino.cc/usa/arduino-mkr1000) board. Sure enough, once I open Ableton Live, drop in an instrument, I heard notes being played. An alternative to the MIDIUSB library is the [47 Effects MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library). Rather than exploring this alternative, I decided to look a couple of wireless options.
+Fortunately, MIDIUSB does compile and work on the SAMD based [Arduino MKR1000](https://store.arduino.cc/usa/arduino-mkr1000) board. Sure enough, once I open Ableton Live, drop in an instrument, I heard notes being played. An alternative to the MIDIUSB library is the [47 Effects MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library). Rather than exploring this alternative, I decided to look into a couple of wireless options.
 
 ## MKR1000 to Abelton Live using OSC
 I also successfully programmed the Arduino MKR1000 to send gesture based OSC messages over WiFi UDP. This is covered in my ***MIxD*** post: [Week 3+4+5: Rhythm Exploration & Prototype]({% post_url 2021-03-04-rhythm-prototype %}).
