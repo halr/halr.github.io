@@ -57,6 +57,9 @@ On the receiving end, I created a test patch that [routes](https://docs.cycling7
 ![](/images/oscGestures.png)
 
 ### Adding Live Paths
-OSC messages being received and routed, it was time to cycle through clips using [`live.path`](https://docs.cycling74.com/max8/refpages/live.path) and [`live.object`](https://docs.cycling74.com/max8/refpages/live.object). I struggeled to get a clip triggered.
+OSC messages being received and routed, it was time to cycle through clips using [`live.path`](https://docs.cycling74.com/max8/refpages/live.path) and [`live.object`](https://docs.cycling74.com/max8/refpages/live.object). I am struggeling to get a clip triggered.
 
 ![](/images/oscLivePath.png)
+
+### Arduino & MIDI
+Lastly, I also explored using Arduino sending MIDI via USB and BLE. A bit of this is documented in my [Rhythm Cube Prototyping]({% post_url 2021-03-09-cube-prototype %}) post.
