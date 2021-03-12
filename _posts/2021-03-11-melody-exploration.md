@@ -18,7 +18,7 @@ In the traditional western musical notation, it's written thusly:
 
 ![](https://www.ars-nova.com/Theory%20Q&A/graphics/Q35.gif)
 
-It is my understanding that the intervals: octave; fifth; major third; and whole tone; are the first audible intervals encountered in [harmonics partials](https://www.ars-nova.com/Theory%20Q&A/Q35.html). Ground this with the diatonic scale, I came up with this:
+It is my understanding is that these intervals: octave; fifth; major third; and whole tone; are the first audible intervals encountered in [harmonics partials](https://www.ars-nova.com/Theory%20Q&A/Q35.html). Grounding this with the diatonic scale, I came up with this:
 
 ![](/images/ce3k.png)
 
