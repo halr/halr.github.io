@@ -22,6 +22,6 @@ It is my understanding is that these intervals: octave; fifth; major third; and 
 
 ![](/images/ce3k.png)
 
-Based on it, sketch an interactive melodic experience.
-- [ ] Imagine an interaction
-- [ ] and controls for interaction
+Now let's imagine some interactive melodic experience based on this motif.
+1) The easy one is an MIDI controller based on the big light board seen the background. I imagine it with light up interactive buttons, sending MIDI out to play notes and lighting up based MIDI recieved.
+2) A glove that recognizes [John Curwen](https://en.wikipedia.org/wiki/John_Curwen)'s [Solfege](https://en.wikipedia.org/wiki/Solfège#Other_possibilities_to_denote_solfège) hand signs and translates the gesture to MIDI notes. An Arduino Nano 33 BLE Sense can be [trained to recognize gestures using TensorFlow lite](https://github.com/arduino/ArduinoTensorFlowLiteTutorials/tree/master/GestureToEmoji). The character in the foreground, played by François Truffaut, can be seen using them in the video above.
