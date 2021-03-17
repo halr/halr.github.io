@@ -7,9 +7,9 @@ theme: minima
 # social links
 github_username:  halr # DO NOT include the @ character, or else the build will fail!
 #linkedin_username: jekyll
-#instagram_username: thaumatomane
-#youtube_username: jekyll
-#twitter_username: halr66 # DO NOT include the @ character, or else the build will fail!
+instagram_username: amped_atelier
+youtube_username: UCGeZbuoySYh9jiNyxq_dClw
+twitter_username: amped_atelier # DO NOT include the @ character, or else the build will fail!
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
