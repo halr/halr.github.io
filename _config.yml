@@ -8,7 +8,7 @@ theme: minima
 github_username:  halr # DO NOT include the @ character, or else the build will fail!
 #linkedin_username: jekyll
 instagram_username: amped_atelier
-youtube_username: Amped Atelier
+#youtube_username: Amped Atelier
 #twitter_username: amped_atelier # DO NOT include the @ character, or else the build will fail!
 
 show_excerpts: true # set to false to remove excerpts on the homepage
