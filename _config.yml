@@ -5,12 +5,12 @@ description: Hal's NYU ITP blog documenting assigments, experiments, exploration
 theme: minima
 
 # social links
-# https://github.com/jekyll/minima#social-networks
+# https://github.com/jekyll/minima/blob/v2.5.0/README.md#social-networks
 github_username:  halr # DO NOT include the @ character, or else the build will fail!
 #linkedin_username: jekyll
 instagram_username: amped_atelier
 #twitter_username: amped_atelier # DO NOT include the @ character, or else the build will fail!
-youtube: ampedatelier
+youtube_username: ampedatelier
 #youtube_channel: UCGeZbuoySYh9jiNyxq_dClw
 #youtube_channel_name: Amped Atelier
 
