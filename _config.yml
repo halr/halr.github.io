@@ -10,9 +10,9 @@ github_username:  halr # DO NOT include the @ character, or else the build will 
 #linkedin_username: jekyll
 instagram_username: amped_atelier
 #twitter_username: amped_atelier # DO NOT include the @ character, or else the build will fail!
-#youtube: jekyll
-youtube_channel: UCGeZbuoySYh9jiNyxq_dClw
-youtube_channel_name: Amped Atelier
+youtube: ampedatelier
+#youtube_channel: UCGeZbuoySYh9jiNyxq_dClw
+#youtube_channel_name: Amped Atelier
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
