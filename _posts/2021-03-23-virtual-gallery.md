@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Virtual Gallery Visit"
-date: 2021-02-23
+date: 2021-03-23
 tags: intangible
 ---
 This week we individually made field trips to galleries, either real or virtual. I choose to visit the [Virtual Intangible Interaction Gallery 2021](https://itp.nyu.edu/classes/intangible-interaction/virtual-intangible-interaction-gallery-2021/). 
