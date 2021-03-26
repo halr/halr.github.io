@@ -21,7 +21,7 @@ float y = 0;
 float t = 0;
 
 SinOsc baseOsc;
-float baseFreq = 440; //hertz
+float baseFreq = 440.0; //hertz
 SinOsc forthsOsc;
 
 void setup() {
@@ -62,4 +62,4 @@ void draw() {
 }
 ```
 
-I struggled deciding what aspect of the audio output to highlight, but settled changing the amplitude of the base note and it's perfect forth so that they are mixed as the graph draws. I'm still not sure about the method in which I mapped the negative values. Overall, the sketch oscillates between the root note, A4 in this example, and it's perfect fourth D5-ish.
+I struggled deciding what aspect of the audio output to highlight, but settled changing the amplitude of the base note and it's perfect forth so that they are mixed as the graph draws. Overall, the sketch oscillates between the root note, A4 in this example, and it's perfect fourth: D5-ish. I'm still not sure about the method in which I mapped the negative values to get an amplitude value.
