@@ -62,4 +62,4 @@ void draw() {
 }
 ```
 
-I struggled deciding what aspect of the audio output to highlight, but settled changing the amplitude of the base note and it's perfect forth so that they are mixed as the graph draws. I'm still not sure about the method in which I mapped the negative values. Overall, the sketch oscillates between the root note, A4 in this example, and it's perfect forth D5.
+I struggled deciding what aspect of the audio output to highlight, but settled changing the amplitude of the base note and it's perfect forth so that they are mixed as the graph draws. I'm still not sure about the method in which I mapped the negative values. Overall, the sketch oscillates between the root note, A4 in this example, and it's perfect fourth D5-ish.
