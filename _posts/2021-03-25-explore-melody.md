@@ -1,0 +1,72 @@
+---
+title: "Explore Melody"
+date: 2021-03-25
+tags:  mixd
+---
+I wanted to explore mathematical ratios that make up [just intonation](https://en.wikipedia.org/wiki/Just_intonation) with both audio and visuals. I was inspired by [Roger Antonsen](http://rantonse.no/en)’s [Metaphors, Mathematics, and the Imagination](https://www.ted.com/talks/roger_antonsen_math_is_the_hidden_secret_to_understanding_the_world) TED talk. In the talk he touches on how the ratio of four thirds is a [perfect fourth](https://en.wikipedia.org/wiki/Perfect_fourth).
+
+I imagined a device that with a screen and two knobs that controlled the ratio. Output would be control voltage through a couple of jacks.
+
+![device concept](/images/deviceConcept.png)
+
+I prototyped the display and audio output in Processing. 
+
+![four thirds](/images/fourThirds.png)
+
+```C++
+import processing.sound.*;
+
+float x = 0;
+float y = 0;
+float t = 0;
+
+SinOsc baseOsc;
+float baseFreq = 440; // hertz
+SinOsc thirdsOsc;
+SinOsc forthsOsc;
+
+void setup() {
+  background(255);
+  size(500,500);
+  
+  fill(255,0,0);
+  stroke(0);
+  strokeWeight(3.0);
+  
+  // Create the oscillators
+  baseOsc = new SinOsc(this);
+  baseOsc.freq(baseFreq);
+  baseOsc.play();
+  
+  thirdsOsc = new SinOsc(this);
+  thirdsOsc.freq(baseFreq*3);
+  thirdsOsc.play();
+  
+  forthsOsc = new SinOsc(this);
+  forthsOsc.freq(baseFreq*4);
+  forthsOsc.play();
+  
+  // The overall amplitude shouldn't exceed 1.0
+  baseOsc.amp(0.3);
+  thirdsOsc.amp(0.3);
+  forthsOsc.amp(0.3);
+}
+
+void draw() {
+  translate(width/2, height/2);
+  t = t + 0.01;
+  x = cos(3*t);
+  y = sin(4*t);
+  println("x="+x+", y="+y);
+
+  stroke(255, (255 * x), (255 * y));
+  ellipse((220 * x),(200 * y),4,4);
+  
+  float xAmp = map(x, -1.0, 1.0, 0, 0.3);
+  float yAmp = map(y, -1.0, 1.0, 0, 0.3);
+  thirdsOsc.amp(xAmp);
+  forthsOsc.amp(yAmp);
+}
+```
+
+I struggled deciding what aspect of the audio output to highlight, but settled changing the amplitude of the third and fourth oscillators so that they are mixed as the graph draws. I'm still not sure about the method in which I mapped the negative values.
