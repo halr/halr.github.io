@@ -59,7 +59,7 @@ I would love to see this has a art installation with a large LED display. This s
 ### BOM
 
 | Part Name | Part Number | Cost |
-|-----------|-------------|-----:|
+|-----------|------------:|-----:|
 | *a TBD feather microcontroller* | | |
 | [Adafruit AirLift FeatherWing - ESP32 WiFi Co-Processor](https://www.adafruit.com/product/4264) | 4264 | $12.95 |
 | [Adafruit MIDI FeatherWing Kit](https://www.adafruit.com/product/4740) | 4740 | $6.95 |
