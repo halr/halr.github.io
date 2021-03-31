@@ -6,9 +6,10 @@ tags: intangible mixd
 **Weather Melody** is a simple Arduino sketch which fetches historical weather data using an http request API and translates it into MIDI data information.
 
 ## Weather into Music Inspiration
-I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/weather-band) and the [weather scores of Nathalie Miebach](http://www.nathaliemiebach.com/weatherscores.html). Her work is composed of music based on weather event data, graphical and informative scores, as well as [sculptures of the scores](https://www.brainpickings.org/2011/07/12/nathalie-miebach-musical-weather-data-sculptures/). Below is an example of one of her scores based on data from [Hurricane Noel](https://en.wikipedia.org/wiki/2001_Atlantic_hurricane_season#Hurricane_Noel).
-
 > Musical notation allows me a more nuanced way of translating information without compromising it. **~ Nathalie Miebach**
+
+I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/weather-band) and the [weather scores of Nathalie Miebach](http://www.nathaliemiebach.com/weatherscores.html). Her work is composed of music based on weather event data, graphical and informative scores, as well as [sculptures of the scores](https://www.brainpickings.org/2011/07/12/nathalie-miebach-musical-weather-data-sculptures/). Below is an example of one of her scores based on data from [Hurricane Noel](https://en.wikipedia.org/wiki/2001_Atlantic_hurricane_season#Hurricane_Noel). She discussed her process in a short Ted Talk: [Art made of Storms](https://www.ted.com/talks/nathalie_miebach_art_made_of_storms) (2011).
+
 
 ![Hurricane Noel](https://www.nathaliemiebach.com/images/score06.jpg)
 
