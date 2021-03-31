@@ -2,7 +2,6 @@
 title: "Weather Melody"
 date: 2021-03-30
 tags: intangible mixd
-published: false
 ---
 **Weather Melody** is a simple Arduino sketch which fetches historical weather data using an http request API and translates it into MIDI data information.
 
@@ -14,20 +13,43 @@ I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/we
 ![Hurricane Noel](https://www.nathaliemiebach.com/images/score06.jpg)
 
 ## Implementation
-For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [ArduinoJson](https://arduinojson.org) libraries to fetch [wind speed data](http://weatherband.itp.io:3000/data/by-cat?macAddress=A4:CF:12:8A:C8:24&cat=windspeed) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). The data is then mapped to MIDI notes values and sent out over USB to my laptop running Ableton Live. I chose the wind speed data point because it is the least uniform and most chaotic of the datasets.
-
-* [ ] see [JSON library example](https://github.com/ITPNYU/Weather-Band/blob/main/get_weather_data/Arduino/get_json_from_db_parse/get_json_from_db_parse.ino)
-* [ ] [Art from data TED talk](https://www.ted.com/playlists/201/art_from_data)
-* [ ] [Synthesized Music Data](https://makezine.com/projects/synthesized-music-data/)
-* [ ] Connect to Ableton, play, & capture as video
+For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [ArduinoJson](https://arduinojson.org) libraries to fetch [wind speed data](http://weatherband.itp.io:3000/data/by-cat?macAddress=A4:CF:12:8A:C8:24&cat=windspeedmph) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). The data is then mapped to MIDI notes values and sent out over USB to my laptop running Ableton Live. I chose the wind speed data point because it is the least uniform and most chaotic of the datasets.
 
 ```C++
-void setup() {
-	// attempt to connect to WiFi network
-	// fetch data
-}
 void loop() {
-	// play data
+	// ...
+	// not shown: fetching the weather data by id, etc.
+	// ...
+	int temperature = parseJsonForValue(weatherRsp, "temperature");
+	int humidity = parseJsonForValue(weatherRsp, "humidity");
+      
+    int note = constrain(temperature, 0, 127);
+    int velocity = constrain(humidity, 0, 127);
+    // play data
+    sendNoteOn(0,note,velocity);
+    lastNote = note;
+}
+
+float parseJsonForValue(String json, String key) {
+	// parse the response looking for key:
+	int labelStart = json.indexOf(key);
+	int dataStart = json.indexOf(" ", labelStart);
+	int dataEnd = json.indexOf(",", dataStart);
+	String dataStr = json.substring(dataStart + 1, dataEnd);
+	Serial.println(dataStr);
+	float returnValue = dataStr.toFloat();
+	returnValue+=0.5; //to handle rounding
+	return returnValue;
+}
+
+void sendNoteOn(byte channel, byte pitch, byte velocity) {
+	midiEventPacket_t midiMsg = {0x09, 0x90 | channel, pitch, velocity};
+	MidiUSB.sendMIDI(midiMsg);
+}
+
+void sendNoteOff(byte channel, byte pitch, byte velocity) {
+	midiEventPacket_t midiMsg = {0x08, 0x80 | channel, pitch, velocity};
+	MidiUSB.sendMIDI(midiMsg);
 }
 ```
 
