@@ -3,18 +3,19 @@ title: "Weather Melody"
 date: 2021-03-30
 tags: intangible mixd
 ---
-**Weather Melody** is a simple Arduino sketch which fetches historical weather data using an http request API and translates it into MIDI data information.
+**Weather Melody** is an Arduino sketch which fetches historical weather data using an http request API and translates it into MIDI messages.
 
-## Weather into Music Inspiration
+## Weather to Music Inspiration
 > Musical notation allows me a more nuanced way of translating information without compromising it. **~ Nathalie Miebach**
 
-I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/weather-band) and the [weather scores of Nathalie Miebach](http://www.nathaliemiebach.com/weatherscores.html). Her work is composed of music based on weather event data, graphical and informative scores, as well as [sculptures of the scores](https://www.brainpickings.org/2011/07/12/nathalie-miebach-musical-weather-data-sculptures/). Below is an example of one of her scores based on data from [Hurricane Noel](https://en.wikipedia.org/wiki/2001_Atlantic_hurricane_season#Hurricane_Noel). She discussed her process in a short Ted Talk: [Art made of Storms](https://www.ted.com/talks/nathalie_miebach_art_made_of_storms) (2011).
-
+I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/weather-band) and particularly the [weather scores of Nathalie Miebach](http://www.nathaliemiebach.com/weatherscores.html). As she describes in a short Ted Talk: [Art made of Storms](https://www.ted.com/talks/nathalie_miebach_art_made_of_storms) (2011), she gathers weather event data, creates graphical and informative musical scores from the data, and finally translates the [scores into sculptures](https://www.brainpickings.org/2011/07/12/nathalie-miebach-musical-weather-data-sculptures/). Below is an example of one of her scores based on data from [Hurricane Noel](https://en.wikipedia.org/wiki/2001_Atlantic_hurricane_season#Hurricane_Noel).
 
 ![Hurricane Noel](https://www.nathaliemiebach.com/images/score06.jpg)
 
 ## Implementation
-For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [MIDIUSB](https://github.com/arduino-libraries/MIDIUSB) libraries to fetch [weather data](http://weatherband.itp.io:3000/data/id/102) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). The data is then mapped to MIDI notes and velocity values and sent out over USB to my laptop running Ableton Live. The code will be github soon.
+For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [MIDIUSB](https://github.com/arduino-libraries/MIDIUSB) libraries to fetch [weather data by id](http://weatherband.itp.io:3000/data/id/102) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). Temperature and humidity values are then mapped to MIDI note and velocity values respectively and sent out as MIDI messages over USB to my laptop running Ableton Live. The code will be github soon.
+
+I had some issues with fetching data consistently using the Arduino MKR1000 WiFi which cleared up once I [updated the WiFi 101 firmware](https://www.arduino.cc/en/Tutorial/FirmwareUpdater).
 
 ```C++
 void loop() {
@@ -54,8 +55,13 @@ void sendNoteOff(byte channel, byte pitch, byte velocity) {
 }
 ```
 
+## Next Steps
+Currently, I am only using temperature and humidity, but air pressure is also an interesting reading. I would like to map pressure to, possibly, a MIDI control change message to alter the note timbre.
+
 ## Going Further
-I would love to see this has a art installation with a large LED display. This simple example uses only a couple of data points of weather information, a fuller *score* could be achieved with additional data points. The graphical display could provide context to the data as it plays, such the event, date and time, and legend of the data points.
+I would love to see this has an art installation with a large LED display. This simple example uses only a couple of data points of weather information, a fuller *score* could be achieved with additional data points. The graphical display could provide context to the data as it plays, such the event, date and time, and legend of the data points.
+
+It would be interesting to analyze the complete dataset either in the manner of Nathalie Miebach or using a python Jupyter notebook.
 
 ### BOM
 
