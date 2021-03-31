@@ -9,6 +9,7 @@ Big LEDs, Spring 2021
 {% if tag == page.tag %}
     <li>
         {{ post.date | date_to_string: "ordinal", "US" }} — <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
     </li>
 {% endif %}
 {% endfor %}
