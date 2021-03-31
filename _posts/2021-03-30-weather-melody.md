@@ -13,7 +13,7 @@ I am inspired by the work of the [ITP Weather Band](https://github.com/ITPNYU/we
 ![Hurricane Noel](https://www.nathaliemiebach.com/images/score06.jpg)
 
 ## Implementation
-For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [ArduinoJson](https://arduinojson.org) libraries to fetch [wind speed data](http://weatherband.itp.io:3000/data/by-cat?macAddress=A4:CF:12:8A:C8:24&cat=windspeedmph) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). The data is then mapped to MIDI notes values and sent out over USB to my laptop running Ableton Live. I chose the wind speed data point because it is the least uniform and most chaotic of the datasets.
+For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101](https://www.arduino.cc/en/Reference/WiFi101), [ArduinoHttpClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/), and [MIDIUSB](https://github.com/arduino-libraries/MIDIUSB) libraries to fetch [weather data](http://weatherband.itp.io:3000/data/id/102) from ITP Weather Band's [Weather Server DB Web API](https://github.com/ITPNYU/Weather-Band/tree/main/database-api). The data is then mapped to MIDI notes and velocity values and sent out over USB to my laptop running Ableton Live.
 
 ```C++
 void loop() {
@@ -59,7 +59,7 @@ I would love to see this has a art installation with a large LED display. This s
 ### BOM
 
 | Part Name | Part Number | Cost |
-|-----------|-------------|------|
+|-----------|-------------|-----:|
 | *a TBD feather microcontroller* | | |
 | [Adafruit AirLift FeatherWing - ESP32 WiFi Co-Processor](https://www.adafruit.com/product/4264) | 4264 | $12.95 |
 | [Adafruit MIDI FeatherWing Kit](https://www.adafruit.com/product/4740) | 4740 | $6.95 |
