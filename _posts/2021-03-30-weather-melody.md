@@ -17,39 +17,39 @@ For the implementation, I'm using the [Arduino MKR1000 WiFi]() with the [WiFi101
 
 ```C++
 void loop() {
-	// ...
-	// not shown: fetching the weather data by id, etc.
-	// ...
-	int temperature = parseJsonForValue(weatherRsp, "temperature");
-	int humidity = parseJsonForValue(weatherRsp, "humidity");
-      
-    int note = constrain(temperature, 0, 127);
-    int velocity = constrain(humidity, 0, 127);
-    // play data
-    sendNoteOn(0,note,velocity);
-    lastNote = note;
+  // ...
+  // not shown: fetching the weather data by id, etc.
+  // ...
+  int temperature = parseJsonForValue(weatherRsp, "temperature");
+  int humidity = parseJsonForValue(weatherRsp, "humidity");
+	      
+  int note = constrain(temperature, 0, 127);
+  int velocity = constrain(humidity, 0, 127);
+  // play data
+  sendNoteOn(0,note,velocity);
+  lastNote = note;
 }
 
 float parseJsonForValue(String json, String key) {
-	// parse the response looking for key:
-	int labelStart = json.indexOf(key);
-	int dataStart = json.indexOf(" ", labelStart);
-	int dataEnd = json.indexOf(",", dataStart);
-	String dataStr = json.substring(dataStart + 1, dataEnd);
-	Serial.println(dataStr);
-	float returnValue = dataStr.toFloat();
-	returnValue+=0.5; //to handle rounding
-	return returnValue;
+  // parse the response looking for key:
+  int labelStart = json.indexOf(key);
+  int dataStart = json.indexOf(" ", labelStart);
+  int dataEnd = json.indexOf(",", dataStart);
+  String dataStr = json.substring(dataStart + 1, dataEnd);
+  Serial.println(dataStr);
+  float returnValue = dataStr.toFloat();
+  returnValue+=0.5; //to handle rounding
+  return returnValue;
 }
 
 void sendNoteOn(byte channel, byte pitch, byte velocity) {
-	midiEventPacket_t midiMsg = {0x09, 0x90 | channel, pitch, velocity};
-	MidiUSB.sendMIDI(midiMsg);
+  midiEventPacket_t midiMsg = {0x09, 0x90 | channel, pitch, velocity};
+  MidiUSB.sendMIDI(midiMsg);
 }
 
 void sendNoteOff(byte channel, byte pitch, byte velocity) {
-	midiEventPacket_t midiMsg = {0x08, 0x80 | channel, pitch, velocity};
-	MidiUSB.sendMIDI(midiMsg);
+  midiEventPacket_t midiMsg = {0x08, 0x80 | channel, pitch, velocity};
+  MidiUSB.sendMIDI(midiMsg);
 }
 ```
 
@@ -57,8 +57,9 @@ void sendNoteOff(byte channel, byte pitch, byte velocity) {
 I would love to see this has a art installation with a large LED display. This simple example uses only one data point of weather information, a fuller *score* could be achieved with additional data points. The graphical display could provide context to the data as it plays, such the event, date and time, and legend of the data points.
 
 ### BOM
+
 | Part Name | Part Number | Cost |
-|:--|:--|--:|
+|-----------|-------------|------|
 | *a TBD feather microcontroller* | | |
 | [Adafruit AirLift FeatherWing - ESP32 WiFi Co-Processor](https://www.adafruit.com/product/4264) | 4264 | $12.95 |
 | [Adafruit MIDI FeatherWing Kit](https://www.adafruit.com/product/4740) | 4740 | $6.95 |
