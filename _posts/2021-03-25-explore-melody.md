@@ -13,7 +13,7 @@ I prototyped the display and audio output in Processing. With the intention of t
 
 ![four thirds](/images/fourThirds.png)
 
-```C++
+```Processing
 import processing.sound.*;
 
 float x = 0;
