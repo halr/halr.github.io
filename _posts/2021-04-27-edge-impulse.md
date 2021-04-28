@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning at Edge"
+title: "Machine Learning at the Edge"
 date: 2021-04-27
 tags:  intangible
 ---
