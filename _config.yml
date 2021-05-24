@@ -14,13 +14,11 @@ instagram_username: amped_atelier
 #youtube_channel: UCGeZbuoySYh9jiNyxq_dClw
 #youtube_channel_name: Amped Atelier
 
-show_excerpts: true # set to false to remove excerpts on the homepage
+#show_excerpts: true # set to false to remove excerpts on the homepage
 
 header_pages:
+  - pds.md
   - about.md
-  - intangible.md
-  - bigleds.md
-  - mixd.md
 
 # Enabling comments (via Disqus)
 disqus:
