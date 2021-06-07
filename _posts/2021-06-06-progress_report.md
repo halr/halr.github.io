@@ -15,7 +15,5 @@ This week, I attempted a timeline based on the time remaining. There is a lot of
 
 ![timeline](/images/timeline.png)
 
-## Project Proposal
-* link to proposal — *Work in Progress*
-
-
+## Living Project Proposal
+The project proposal for the *Tech Couture Revealed* book can be found [here](https://docs.google.com/document/d/1rTvc6xO0c-Obu2SGkoHCQlyOPrr65PcUO-X1CTN5F7w/edit?usp=sharing) in Google Docs.
