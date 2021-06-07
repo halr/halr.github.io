@@ -11,7 +11,7 @@ Last week, we work on an in class project grid exercise brainstorming aspects of
 ![thesis grid](/images/thesisGrid.png)
 
 ## Timeline
-This week, I attempted a timeline based on the time remaining. There is a lot of work to be done! 
+This week, I attempted to create a [timeline](https://www.notion.so/4048abe711d84251b0ef62fc6696730b?v=08d30807ae30412981b5df27a5c66f27) based on the time remaining. There is a lot of work to be done! Following examples presented in previous classes I used notio.so, which allows different presentations of the task list. Below is the [kanban](https://en.wikipedia.org/wiki/Kanban_(development)) board view, other views I found useful include the humble list view and the timeline view.
 
 ![timeline](/images/timeline.png)
 
